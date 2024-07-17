@@ -1,0 +1,1 @@
+rlaunch --cpu=16 --gpu=2 --memory=32000 -- python test_graphformer.py

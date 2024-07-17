@@ -1,0 +1,30 @@
+from easydict import EasyDict as edict
+
+USPTO_CONFIG = edict()
+root = "/YOUR OWN PATH HERE/remo_dataset"
+USPTO_CONFIG.path = "{}/uspto_data/uspto.csv".format(root)
+USPTO_CONFIG.path_full = "{}/uspto_data/USPTO_FULL.csv".format(root)
+USPTO_CONFIG.reactant = "{}/uspto_data/reactant.txt".format(root)
+USPTO_CONFIG.full = "{}/uspto_data/full.txt".format(root)
+USPTO_CONFIG.full_smiles = "{}/uspto_data/smiles.txt".format(root)
+USPTO_CONFIG.failed = "{}/uspto_data/failed_samples.txt".format(root)
+USPTO_CONFIG.reactant_dict = "{}/uspto_data/reactant_dict.pickle".format(root)
+USPTO_CONFIG.full_dict = "{}/uspto_data/full_dict.pickle".format(root)
+USPTO_CONFIG.reactant_df = "{}/uspto_data/uspto_reactant.csv".format(root)
+USPTO_CONFIG.full_df = "{}/uspto_data/uspto_full_mol.csv".format(root)
+USPTO_CONFIG.reaction_centre = "{}/uspto_data/reaction_centre.pickle".format(root)
+USPTO_CONFIG.dup_raw = "{}/uspto_data/duplicate_raw.txt".format(root)
+USPTO_CONFIG.problematic = "{}/uspto_data/problematic_raw.txt".format(root)
+USPTO_CONFIG.dataset = "{}/uspto_data/uspto_molair.csv".format(root)
+USPTO_CONFIG.vocab_save_folder = "{}/uspto_data".format(root)
+USPTO_CONFIG.dataset_name = "uspto"
+USPTO_CONFIG.atom_vocab_file = "{}/uspto_data/uspto_atom_vocab.pkl".format(root)
+USPTO_CONFIG.dataset_480k_train = "{}/uspto_data/uspto_480k_train.csv".format(root)
+USPTO_CONFIG.dataset_480k_valid = "{}/uspto_data/uspto_480k_valid.csv".format(root)
+USPTO_CONFIG.dataset_480k_test = "{}/uspto_data/uspto_480k_test.csv".format(root)
+USPTO_CONFIG.uspto_1k_tpl_test = "{}/uspto_data/uspto_1k_TPL_test.tsv".format(root)
+USPTO_CONFIG.uspto_1k_tpl_train = "{}/uspto_data/uspto_1k_TPL_train_valid.tsv".format(root)
+DDI_CONFIG = edict()
+DDI_CONFIG.data_dir = "{}/uspto_data/DrugBank5.0_Approved_drugs".format(root)
+DDI_CONFIG.label_file = "{}/uspto_data/DrugBank_known_ddi.txt".format(root)
+DDI_CONFIG.train_ratio = 0.6
